@@ -1,4 +1,4 @@
-package com.example.SpringData_JDBC.Repositories;
+package com.example.SpringData_JDBC.Repository;
 
 import com.example.SpringData_JDBC.Entities.Book;
 import org.springframework.data.repository.CrudRepository;

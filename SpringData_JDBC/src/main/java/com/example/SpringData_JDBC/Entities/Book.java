@@ -1,11 +1,10 @@
 package com.example.SpringData_JDBC.Entities;
 
-import org.springframework.data.annotation.Id;
-
 import java.time.Year;
 import jakarta.persistence.*;
 
-public class Book {
+@Entity
+ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     long id;

@@ -1,9 +1,12 @@
 package com.example.SpringData_JDBC.Controllers;
 
 import com.example.SpringData_JDBC.Entities.Book;
+
 import com.example.SpringData_JDBC.Services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class BookController {
@@ -21,7 +24,7 @@ public class BookController {
     }
 
     @GetMapping("/getBooks")
-    public Iterable<Book>getBooks(){
+    public List<Book> getBooks(){
         return bookService.getBooks();
     }
 
